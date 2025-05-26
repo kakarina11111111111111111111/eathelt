@@ -1,0 +1,77 @@
+<section id="tips">
+      <h3>How to eat healthy and correct?</h3>
+      <ol>
+        <li>
+          <img src="https://i.pinimg.com/736x/18/e8/78/18e8788361a1a33783cc17f7f21a3da9.jpg" alt="Colorful veggies">
+          More vegetables and fruits
+          <span>Eat at least 5 varieties a day – they are rich in vitamins, fiber and antioxidants.</span>
+          <a class="button green toggle-info" href="#">More info</a>
+          <p class="extra-info">Try mixing raw, steamed and roasted veggies. Add berries, apples, citrus fruits and leafy greens daily.</p>
+        </li>
+        <li>
+          <img src="https://i.pinimg.com/736x/34/e2/8b/34e28b5258263073964be52284a575a6.jpg" alt="Bright proteins">
+          Proteins are the basis of energy
+          <span>Add eggs, fish, meat, legumes or dairy products to your diet.</span>
+          <a class="button pink toggle-info" href="#">More info</a>
+          <p class="extra-info">Include a protein source in every meal to stabilize energy and support muscle function.</p>
+        </li>
+        <li>
+          <img src="https://i.pinimg.com/736x/55/ae/bc/55aebc7cc7b116a395d0a9753e991ec8.jpg" alt="Healthy carbs">
+          Carbohydrates are not enemies
+          <span>Choose whole grain products: bread, cereals, brown rice.</span>
+          <a class="button green toggle-info" href="#">More info</a>
+          <p class="extra-info">Whole grains offer lasting energy and digestive support. Avoid refined white flour products.</p>
+        </li>
+        <li>
+          <img src="https://i.pinimg.com/originals/2f/fe/06/2ffe062dcc7a064218bba863e6f13519.gif" alt="Sugar and salt">
+          Less sugar and salt
+          <span>Avoid sugary drinks and fast food. Replace salt with spices and herbs.</span>
+          <a class="button pink toggle-info" href="#">More info</a>
+          <p class="extra-info">Use fresh herbs, lemon juice or garlic to enhance flavor without extra salt or sugar.</p>
+        </li>
+        <li>
+          <img src="https://i.pinimg.com/736x/74/38/fb/7438fb50af741a5f9cbf6d8dee356557.jpg" alt="Stay hydrated">
+          Drink enough water
+          <span>At least 1.5–2 liters per day – this is important for metabolism.</span>
+          <a class="button green toggle-info" href="#">More info</a>
+          <p class="extra-info">Start your morning with a glass of water. Herbal teas and fruits also contribute to hydration.</p>
+        </li>
+        <li>
+          <img src="https://i.pinimg.com/736x/ee/7d/1a/ee7d1a31141e6fd77b5fcc956fb72af2.jpg" alt="Smaller portions">
+          Watch your portion sizes
+          <span>Eat slowly and in small portions – listen to the feeling of satiety and do not overeat.</span>
+          <a class="button pink toggle-info" href="#">More info</a>
+          <p class="extra-info">Use smaller plates, chew thoroughly and pause between bites to feel full.</p>
+        </li>
+        <li>
+          <img src="https://i.pinimg.com/736x/ca/2a/c7/ca2ac71fa10d43804e3f2ccb4bf41101.jpg" alt="Regular meals">
+          Do not skip meals
+          <span>Regular meals help maintain energy and not overeat later.</span>
+          <a class="button green toggle-info" href="#">More info</a>
+          <p class="extra-info">Plan your meals ahead and always have a healthy snack on hand to stay consistent.</p>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Healthy Eating Project. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.toggle-info').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const info = this.nextElementSibling;
+        if (info.style.display === 'none' || info.style.display === '') {
+          info.style.display = 'block';
+          this.textContent = 'Less info';
+        } else {
+          info.style.display = 'none';
+          this.textContent = 'More info';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
